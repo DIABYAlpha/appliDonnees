@@ -9,13 +9,13 @@
 </head>
 <body>
 
-    <form class="p-5 m-5 bg-primary">
-        <input id="nom" type="text" placeholder="Votre Nom" class="form-control">
+    <form class="p-5 m-5 bg-primary text-align">
+        <input id="nom" type="text" placeholder="Votre Nom" class="form-control" >
         <input id="prenom" type="text" placeholder="Votre Prénom"class="form-control">
         <input id="age" type="number" placeholder="Votre âge" class="form-control">
     </form>
 
-    <p id="demo">Vous vous appelez  vous avez  ans </p>
+    <p id="demo" class="text-center"> </p>
 
     <button id="btn" class="btn btn-primary btn-sm">Afficher</button>
 
@@ -33,7 +33,7 @@
         let nom = document.getElementById("nom").value;       // c'est pour récuperer les infomations issues de mes imputs 
         let prenom = document.getElementById("prenom").value; // les données de mon formulaire
         let age = document.getElementById("age").value;
-        infos.innerHTML = `<p class="text-primary"> Vous vous appelez ${nom}  ${prenom}<br> vous avez ${age} ans</p>`// pour lier mes données 
+        infos.innerHTML = `<p class="text-primary "> Vous vous appelez ${nom}  ${prenom}<br> vous avez ${age} ans</p>`// pour lier mes données 
 
         
         // console.log(nom)
