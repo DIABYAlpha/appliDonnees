@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <title>application âge</title>
+</head>
+<body>
+
+    <form class="p-5 m-5 bg-primary">
+        <input id="nom" type="text" placeholder="Votre Nom" class="form-control">
+        <input id="prenom" type="text" placeholder="Votre Prénom"class="form-control">
+        <input id="age" type="number" placeholder="Votre âge" class="form-control">
+    </form>
+
+    <p id="demo">Vous vous appelez  vous avez  ans </p>
+
+    <button id="btn" class="btn btn-primary btn-sm">Afficher</button>
+
+
+    <script>
+
+        let btn = document.getElementById("btn")
+
+        let infos = document.getElementById("demo");
+    
+
+    
+        btn.addEventListener("click", function (e) {
+
+        let nom = document.getElementById("nom").value;       // c'est pour récuperer les infomations issues de mes imputs 
+        let prenom = document.getElementById("prenom").value; // les données de mon formulaire
+        let age = document.getElementById("age").value;
+        infos.innerHTML = `<p class="text-primary"> Vous vous appelez ${nom}  ${prenom}<br> vous avez ${age} ans</p>`// pour lier mes données 
+
+        
+        // console.log(nom)
+        // console.log(prenom)                                 // Pour verifier si elles recuperent bien mes infomations
+        // console.log(age)
+        
+        })
+
+    </script>
+</body>
+</html>
